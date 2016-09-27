@@ -12,18 +12,11 @@
 <div class=lol>
 <h1>Hiiiii this is test for a my new website</h1>
 </div>
-<div id="regFormContainer" class="bar-colors-borders">
-                    <form action="uploadImages.php" method="post" onsubmit="return validateUploadFile();" enctype="multipart/form-data" >
-                        <p><input type="hidden" name="MAX_FILE_SIZE" value="100000" /></p>
-                        <div class="uploadFileprompt">
-                            <div class="span_left">File 1 to upload - Max. 100kb</div>
-                            <div class="span_right"><input type="file" name="txtUploadFile[]"  /></div>
-                        </div>
-                        <div class="uploadFileprompt">
-                            <div class="span_left">File 2 to upload - Max. 100kb</div>
-                            <div class="span_right"><input type="file" name="txtUploadFile[]"  /></div>
-                        </div>
-</div>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
 <div class=name>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
